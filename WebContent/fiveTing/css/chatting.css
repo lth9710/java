@@ -1,0 +1,164 @@
+@CHARSET "UTF-8";
+
+.reply_list {width:100% auto;padding:10px 5px 10px 5px;background:#cfd7e9;}
+.reply_list .name {}
+.reply_list .date {}
+.reply_list .ip {}
+.reply_list .other_reply {width:auto;margin:0 0;}
+.reply_list .other_reply .txt_box {width:100%;}
+.reply_list .other_reply .txt {position:relative;float:left;max-width:90%;padding:15px 10px;background:#fff;border-radius:0 10px 10px 10px;text-overflow: ellipsis;word-break:break-word;text-align:left;font-family:"굴림" , "Gulim";}
+.reply_list .other_reply .txt span {color:#7b828b;}
+.reply_list .other_reply .txt .re_txt {clear:both;overflow:hidden;display:block;color:#333;text-align:left;line-height:140%;}
+.reply_list .other_con {overflow:hidden;position:relative;margin:0 0 0 0;padding:10px 0 0 49px; tex}
+.reply_list .other_con a {float:left;display:block;margin-bottom:10px;text-decoration:none;text-align:left;}
+.reply_list .other_con a span {margin-right:6px;}
+.reply_list .other_con .photo {position:absolute;top:10px;left:0;width:37px;height:37px;border-radius:100%;border:1px solid #bfbfbf;}
+.reply_list .other_con .photo img {width:100%;border-radius:100%;border:none;}
+.reply_list .other_con .txt .icon_arr {display:block;position:absolute;top:0;left:-8px;width:8px;height:9px;background:url('http://image.donga.com/challenge/mlbpark/images/icon_arr01.png') no-repeat 0 0;background-size:8px 9px;}
+.reply_list .other_reply .btn_del {position:absolute;bottom:-1px;right:-15px;display:block;width:31px;height:15px;background:url('http://image.donga.com/challenge/mlbpark/images/btn_del01.png') no-repeat 0 0;background-size:31px 15px;z-index:0;}
+.reply_list .icon_mark {display:block;width:37px;height:37px;overflow:hidden;}
+.reply_list .other_reply .txt .btn_edit {display:inline-block;margin:0 1px 0 0;color:#7a838c;font-size:11px;}
+.reply_list .other_reply .txt .btn_redel {display:inline-block;margin:0;color:#7a838c;font-size:11px;}
+.reply_list .other_reply .txt .btn_rebox {float:right;padding-left:15px;}
+.reply_list .other_reply .txt .btn_rebox a {float:none;}
+.reply_list .other_reply .txt .btn_rebox .txt_bar {color:#c7cad4;font-size:11px;margin:0;}
+
+.reply_list .my_reply {width:auto;text-align:right;}
+.reply_list .my_reply .txt_box {width:100%;}
+.reply_list .my_reply .txt {position:relative;float:right;max-width:90%;padding:15px 10px;background:#fcffca;border-radius:10px 0 10px 10px;color:#7b828b;text-align:left;line-height:130%;text-overflow: ellipsis;word-break:break-word;text-align:right;font-family:"굴림" , "Gulim";}
+.reply_list .my_reply .txt span {color:#7b828b;margin-right:6px;}
+.reply_list .my_reply .txt .re_txt {clear:both;display:block;color:#333;text-align:left;line-height:140%;}
+.reply_list .my_reply .txt .btn_edit {display:inline-block;margin:0 1px 0 0;color:#7a838c;font-size:11px;}
+.reply_list .my_reply .txt .btn_redel {display:inline-block;margin:0;color:#7a838c;font-size:11px;}
+.reply_list .my_con .btn_del {position:absolute;bottom:-1px;left:-15px;display:block;width:31px;height:15px;background:url('http://image.donga.com/challenge/mlbpark/images/btn_del02.png') no-repeat 0 0;background-size:31px 15px;z-index:0;}
+.reply_list .my_con {overflow:hidden;position:relative;padding:10px 49px 0 0;}
+.reply_list .my_con a {float:left;display:block;margin-bottom:10px;text-decoration:none;text-align:left;}
+.reply_list .my_con .photo {position:absolute;top:10px;right:2px;width:37px;height:37px;border-radius:100%;border:1px solid #bfbfbf;}
+.reply_list .my_con .photo img {width:100%;border-radius:100%;border:none;}
+.reply_list .my_con .txt .icon_arr {display:block;position:absolute;top:0;right:-14px;width:8px;height:9px;background:url('http://image.donga.com/challenge/mlbpark/images/icon_arr02.png') no-repeat 0 0;background-size:8px 9px;}
+.reply_list .my_reply .txt .btn_rebox {float:right;padding-left:15px;}
+.reply_list .my_reply .txt .btn_rebox a {float:none;}
+.reply_list .my_reply .txt .btn_rebox .txt_bar {color:#c7cad4;font-size:11px;margin:0;}
+
+
+ 
+.chat{
+	width: 380px;
+	padding: 10px 50px 10px 10px;
+	background-color:#a1c0d6;
+}
+.chat > ul{
+	position: relative;
+	width: 350px;
+	z-index: 0;
+}
+.chat > ul > li > span {
+	font-family:'Kakao';
+}
+
+ul.from_me {
+	text-align: right;
+}
+ul.from_me > li {
+    display: inline-block;
+	text-align: left;
+    position: relative;
+    background: #FCCE00;
+	word-wrap: break-word;
+	max-width: 240px;
+	padding:10px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+    border-radius: 10px;
+}
+ul.from_me > li:after {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 12.5px;
+    z-index: -1;
+    background: #a1c0d6;
+    bottom: -10px;
+    right: -13px;
+}
+ul.from_me > li:before {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 12.5px;
+    z-index: -1;
+    background: #FCCE00;
+    bottom: -6px;
+    right: -4px;
+}
+
+ul.from_me > li > span.nm {
+	position: absolute;
+	right:0px;
+	top:-20px;
+}
+
+ul.from_me > li > span.tm {
+	position: absolute;
+	font-size: 14px;
+	left:-55px;
+	bottom:0px;
+}
+ul.from_you > li {
+    display: inline-block;
+    position: relative;
+    
+	background: #FFFFFD;
+	
+	word-wrap: break-word;
+	max-width: 240px;
+	padding:10px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+    border-radius: 10px;
+}
+ul.from_you > li:after {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 12.5px;
+    z-index: -1;
+    background: #a1c0d6;
+    bottom: -10px;
+    left: -13px;
+}
+ul.from_you > li:before {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 12.5px;
+    z-index: -1;
+    background: #FFFFFD;
+    bottom: -6px;
+    left: -4px;
+}
+ul.from_you {
+	text-align: left;
+}
+
+ul.from_you > li > span.nm {
+	position: absolute;
+	left:0px;
+	top:-20px;
+}
+
+ul.from_you > li > span.tm {
+	position: absolute;
+	font-size: 14px;
+	right:-55px;
+	bottom:0px;
+}
+
+inner_center{
+	padding:10px 5px 10px 5px;
+	
+}
